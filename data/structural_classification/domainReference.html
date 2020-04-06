@@ -1,0 +1,90 @@
+<center><div class="download_header" style="width:850px;"><h2 class="contentBoxHeader">Protein Structure and Domain Predictions</h2></div><div class="download" style="width:850px;" align="left">
+
+	<p>This is the raw, tab delimited data from
+	<a href="http://www.yeastrc.org/pdr/pubmedRedirect.do?PMID=21824995" target="publication_window">Drew K, et al. (2011)</a>.
+	</p>
+
+	<div style="margin-left:20px;margin-top:10px;">
+		
+		<a href="/pdr/data/domainParseDump.tar"><span style="color:red;font-weight:bold;">domainParseDump.tar</span></a> [126.0M]
+		
+		<div style="margin-left:20px;margin-top:0px;">
+			This file contains the following four data files:
+
+			<ul>
+				<li style="margin-bottom:10px;"><span style="font-weight:bold;">pspProteins.fasta.gz</span> - The proteins and their sequences, in FASTA format,
+				for the proteins analyzed by this research project.  The FASTA headers contain the internal YRC sequence ID and is referenced in other
+				data files. The FASTA header descriptions contain the YRC protein IDs that correspond to the sequence ID.</li>
+				
+				<li style="margin-bottom:10px;"><span style="font-weight:bold;">domainTableDump.txt.gz</span> - Information about the
+				domains predicted for each of the proteins.  This file contains the following columns:
+				
+				<ul style="margin-top:10px;">
+					<li><i>Domain ID</i> - Unique domain identification number.</li>
+					<li><i>YRC Sequence ID</i> - Unique protein identification number.</li>
+					<li><i>Domain Number</i> - Moving from the N to C terminus, the order that the start of this domain appears (is it the first, second, third, etc domain).</li>
+					<li><i>PDB ID</i> - If this domain was determined by a PSI-BLAST match to a PDB, this is the match.</li>
+					<li><i>Score</i> - The score used from the respective method that was used to identify this domain using GINZU.</li>
+					<li><i>Method</i> - The method used during the GINZU domain prediction method that was used to predict this domain.</li>
+				</ul></li>
+				
+				<li style="margin-bottom:10px;"><span style="font-weight:bold;">domainRegionTableDump.txt.gz</span> - Information
+				describing how the predicted domains map onto the protein sequences.  This file contains the following columns:
+				
+				<ul style="margin-top:10px;">
+					<li><i>Region ID</i> - Unique region identification number.</li>
+					<li><i>Domain ID</i> - The ID of the domain to which this region belongs.</li>
+					<li><i>Domain Segment</i> - Domains may consist of discontiguous regions in the protein sequence.  In this event, the first segment will
+					be labeled as "A", the second as "B" and so forth.</li>
+					<li><i>Start Residue</i> - The number of the start residue in the protein sequence for this region.</li>
+					<li><i>End Residue</i> - The number of the end residue in the protein sequence for this region.</li>
+					<li><i>Description</i> - Brief descriptive text describing this region.</li>
+				</ul></li>
+				
+				<li style="margin-bottom:10px;"><span style="font-weight:bold;">decoyMatchesDump.txt.gz</span> - Information describing
+				which protein structure prediction was made for particular domains, as well as the quality of that predicted protein
+				structure.  This file contains the following columns:
+				
+				<ul style="margin-top:10px;">
+					<li><i>Unique identification number</i> - A unique number identifying the match of a domain to a predicted protein structure.</li>
+					<li><i>Domain ID</i> - The ID of the domain whose structure was predicted.</li>
+					<li><i>MCM Score</i> - The score describing the quality of this predicted structure's match to the predicted SCOP superfamily (see paper for details).</li>
+					<li><i>SCOP superfamily</i> - The matching SCOP superfamily.</li>
+					<li><i>Decoy ID</i> - The unique identifier of the predicted 3D structure for this domain (referencing the structure datafile below).</li>
+					<li><i>GO integration score</i> - The score obtained after integrating the predicted structure with known Gene Ontology annotations for this protein (see paper for details).</li>
+					<li><i>GO accession ID</i> - The accession ID of the Gene Ontology term used to derive the GO integration score.</li>
+				</ul></li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="margin-left:20px;margin-top:10px;">
+		
+		<a href="/pdr/data/pspProteinDescriptions.txt.gz"><span style="color:red;font-weight:bold;">pspProteinDescriptions.txt.gz</span></a> [138M]
+		
+		<div style="margin-left:20px;margin-top:0px;">
+			This file contains a mapping of YRC protein IDs to names and descriptions from common databases. Columns are:
+			
+				<ul style="margin-top:10px;">
+					<li><i>Protein ID</i> - Unique number identifying this protein.</li>
+					<li><i>Reference Source</i> - The name of the source reference, such as NCBI or SGD.</li>
+					<li><i>Accession String</i> - The accession string for this protein for this reference.</li>
+					<li><i>Description</i> - The description of this protein for this reference.</li>
+				</ul>
+		</div>
+	</div>	
+
+	<div style="margin-left:20px;margin-top:10px;">
+		
+		<a href="/pdr/data/decoyAtomRecordDump.txt.gz"><span style="color:red;font-weight:bold;">decoyAtomRecordDump.txt.gz</span></a> [5.4G]
+		
+		<div style="margin-left:20px;margin-top:0px;">
+			This file contains the predicted structures for the domains from this project.  The two columns are:
+
+				<ul style="margin-top:10px;">
+					<li><i>Decoy ID</i> - Unique number identifying this structure.</li>
+					<li><i>Structure Data</i> - The PDB file format 3D structure.</li>
+				</ul>
+		</div>
+	</div>		
+</div></center>

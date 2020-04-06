@@ -1,0 +1,6 @@
+feature	all	hyd
+all	0.717	0.726
+cd+nopt	0.632	0.632
+cd	0.566	0.566
+nopt	0.472	0.472
+counts	0.792	0.698

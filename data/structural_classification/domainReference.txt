@@ -1,0 +1,45 @@
+
+
+This is the raw, tab delimited data from Drew K, et al. (2011).
+domainParseDump.tar [126.0M]
+This file contains the following four data files:
+
+    pspProteins.fasta.gz - The proteins and their sequences, in FASTA format, for the proteins analyzed by this research project. The FASTA headers contain the internal YRC sequence ID and is referenced in other data files. The FASTA header descriptions contain the YRC protein IDs that correspond to the sequence ID.
+    domainTableDump.txt.gz - Information about the domains predicted for each of the proteins. This file contains the following columns:
+        Domain ID - Unique domain identification number.
+        YRC Sequence ID - Unique protein identification number.
+        Domain Number - Moving from the N to C terminus, the order that the start of this domain appears (is it the first, second, third, etc domain).
+        PDB ID - If this domain was determined by a PSI-BLAST match to a PDB, this is the match.
+        Score - The score used from the respective method that was used to identify this domain using GINZU.
+        Method - The method used during the GINZU domain prediction method that was used to predict this domain.
+    domainRegionTableDump.txt.gz - Information describing how the predicted domains map onto the protein sequences. This file contains the following columns:
+        Region ID - Unique region identification number.
+        Domain ID - The ID of the domain to which this region belongs.
+        Domain Segment - Domains may consist of discontiguous regions in the protein sequence. In this event, the first segment will be labeled as "A", the second as "B" and so forth.
+        Start Residue - The number of the start residue in the protein sequence for this region.
+        End Residue - The number of the end residue in the protein sequence for this region.
+        Description - Brief descriptive text describing this region.
+    decoyMatchesDump.txt.gz - Information describing which protein structure prediction was made for particular domains, as well as the quality of that predicted protein structure. This file contains the following columns:
+        Unique identification number - A unique number identifying the match of a domain to a predicted protein structure.
+        Domain ID - The ID of the domain whose structure was predicted.
+        MCM Score - The score describing the quality of this predicted structure's match to the predicted SCOP superfamily (see paper for details).
+        SCOP superfamily - The matching SCOP superfamily.
+        Decoy ID - The unique identifier of the predicted 3D structure for this domain (referencing the structure datafile below).
+        GO integration score - The score obtained after integrating the predicted structure with known Gene Ontology annotations for this protein (see paper for details).
+        GO accession ID - The accession ID of the Gene Ontology term used to derive the GO integration score.
+
+pspProteinDescriptions.txt.gz [138M]
+This file contains a mapping of YRC protein IDs to names and descriptions from common databases. Columns are:
+
+    Protein ID - Unique number identifying this protein.
+    Reference Source - The name of the source reference, such as NCBI or SGD.
+    Accession String - The accession string for this protein for this reference.
+    Description - The description of this protein for this reference.
+
+decoyAtomRecordDump.txt.gz [5.4G]
+This file contains the predicted structures for the domains from this project. The two columns are:
+
+    Decoy ID - Unique number identifying this structure.
+    Structure Data - The PDB file format 3D structure.
+
+
