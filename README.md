@@ -2,41 +2,40 @@
 
 ## Sebastian Pechmann (2020)
 
-### Department of Biochemistry, University of Montreal
-### pechmannlab.net
+#### pechmannlab.net
+#### sebastian@pechmannlab.net
 
 
 
-
-### 1. Structural classification of chaperone substrates
+#### 1. Structural classification of chaperone substrates
 structural_classification.py
 
-### 2. Homology modeling
+#### 2. Homology modeling
 homology_modelling.py
 
-### 3. Minimization of PDB structures
+#### 3. Minimization of PDB structures
 preparePDB.py
 
-### 4. Compute structural phylogeny with 'superpose'
+#### 4. Compute structural phylogeny with 'superpose'
 structphylo.py
 
-### 5. Compute structure-based multiple-sequence alignment with 'Stamp'
+#### 5. Compute structure-based multiple-sequence alignment with 'Stamp'
 structaln.py
 
-### 6. Contact maps of hydrophobic contacts with 'CSU'
+#### 6. Contact maps of hydrophobic contacts with 'CSU'
 csu.py
 
-### 7. Analysis of protein contact networks
+#### 7. Analysis of protein contact networks
 protein_network.py
 
-### 8. Analysis of binding motifs and discriminative peptide sequences
+#### 8. Analysis of binding motifs and discriminative peptide sequences
 binding_meme.py
 binding_motifs.py
 
-### 9. Analysis of codon usage
+#### 9. Analysis of codon usage
 rarecodons.py
 
-### 10. Integrated analysis
+#### 10. Integrated analysis
 tradeoff_tree.py
 
 
@@ -45,6 +44,5 @@ R: ggplot2, reshape2, pROC, viridis, cowplot, , MASS, rpart, ape, ggExtra, matri
 
 Python: numpy, pandas, networkx, subprocess, Biopython, itertools, sklearn, multiprocessing, random, glob, MODELLER, re, shutil, Weblogo 
 
-External: superpose, STAMP, DSSP, CSU, MEME, Weblogo
+External: superpose, STAMP, DSSP, CSU, MEME
 
-(to be updated)
