@@ -1,8 +1,8 @@
 # Programmed trade-offs in protein folding networks
 
 ### Sebastian Pechmann (2020)
-pechmannlab.net\
-sebastian@pechmannlab.net\
+Web: pechmannlab.net\
+Contact: sebastian@pechmannlab.net
 
 
 
