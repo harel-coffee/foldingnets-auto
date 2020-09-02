@@ -1,8 +1,9 @@
 # Programmed trade-offs in protein folding networks
 
 ### Sebastian Pechmann (2020)
-pechmannlab.net
-sebastian@pechmannlab.net
+pechmannlab.net\
+sebastian@pechmannlab.net\
+
 
 
 ### Analyses:
@@ -28,7 +29,7 @@ csu.py
 protein_network.py
 
 #### 8. Analysis of binding motifs and discriminative peptide sequences
-binding_meme.py
+binding_meme.pyi\
 binding_motifs.py
 
 #### 9. Analysis of codon usage
