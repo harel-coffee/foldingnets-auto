@@ -1,12 +1,11 @@
 # Programmed trade-offs in protein folding networks
 
-## Sebastian Pechmann (2020)
-
-#### pechmannlab.net
-#### sebastian@pechmannlab.net
-
+### Sebastian Pechmann (2020)
+pechmannlab.net
+sebastian@pechmannlab.net
 
 
+### Analyses:
 #### 1. Structural classification of chaperone substrates
 structural_classification.py
 
