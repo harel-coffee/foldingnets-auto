@@ -1,6 +1,7 @@
 # Programmed trade-offs in protein folding networks
+Structure (2020) DOI: 10.1016/j.str.2020.09.009
 
-### Sebastian Pechmann (2020)
+### Sebastian Pechmann
 Web: pechmannlab.net\
 Contact: sebastian@pechmannlab.net
 
